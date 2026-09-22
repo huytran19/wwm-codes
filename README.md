@@ -5,6 +5,8 @@ và tự lưu tiến trình.
 
 👉 **https://huytran19.github.io/wwm-codes/**
 
+📖 **Hướng dẫn dùng app:** https://huytran19.github.io/wwm-codes/huong-dan.html
+
 ## Có gì
 
 - Danh sách code còn hạn, tìm kiếm và lọc theo *chưa dùng / đã dùng*
@@ -25,7 +27,9 @@ và tự lưu tiến trình.
 
 ```
 index.html          Bố cục trang + overlay + các hộp thoại
+huong-dan.html      Hướng dẫn từng bước cho người không rành máy tính
 css/style.css       Giao diện
+img/                Ảnh chụp app đã chú thích mũi tên + chữ
 js/codes-data.js    Danh sách code (bản chụp)
 js/app.js           Logic danh sách, overlay, lưu tiến trình
 ```

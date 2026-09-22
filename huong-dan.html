@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Hướng dẫn dùng app Overlay Copy — WWM Codes</title>
+<meta name="description" content="Hướng dẫn từng bước: tải bản portable, mở app, nhập code, xuyên chuột, đổi phím tắt và dùng macro tự động." />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap top-in">
+    <a class="brand" href="./" style="text-decoration:none;color:inherit">
+      <span class="dot"></span>
+      <b>WWM Codes</b>
+    </a>
+    <div class="top-right"><a href="./">← Về trang code</a></div>
+  </div>
+</header>
+
+<main class="wrap guide">
+
+  <div class="g-hero">
+    <h1>Hướng dẫn dùng app Overlay Copy</h1>
+    <p>Dành cho người chưa từng cài phần mềm ngoài. Làm theo đúng thứ tự là chạy được.</p>
+    <p class="g-need"><b>Cần:</b> máy Windows 10 hoặc 11, bản <b>64-bit</b>. Không cần cài thêm gì khác.</p>
+  </div>
+
+  <nav class="g-toc">
+    <a href="#b1">1. Tải app</a>
+    <a href="#b2">2. Mở lần đầu</a>
+    <a href="#b3">3. Nhập code</a>
+    <a href="#b4">4. Copy từng dòng</a>
+    <a href="#b5">5. Xuyên chuột</a>
+    <a href="#b6">6. Đổi phím tắt</a>
+    <a href="#b7">7. Macro tự động</a>
+    <a href="#b8">8. Gặp lỗi?</a>
+  </nav>
+
+  <!-- 1 -->
+  <section class="g-step" id="b1">
+    <h2><span class="g-num">1</span> Tải app về máy</h2>
+    <p>Kéo xuống cuối <a href="./">trang code</a>, tìm khung <b>“Muốn tự động nhập luôn?”</b> rồi bấm nút xanh.</p>
+    <figure>
+      <img src="img/hd-0-tai.png" alt="Khung tải app ở cuối trang, mũi tên chỉ vào nút Tải bản Portable" loading="lazy" />
+    </figure>
+    <div class="g-box">
+      <b>Chọn bản nào?</b>
+      <p><b>Bản Portable</b> — nên chọn cái này. Tải về là chạy được ngay, không cài đặt, để đâu cũng được, kể cả USB. Xoá đi là sạch, không để lại gì trong máy.</p>
+      <p><b>Bản cài đặt</b> — cài hẳn vào máy, có sẵn shortcut ngoài Desktop và trong Start Menu.</p>
+    </div>
+    <p class="g-note">File nặng khoảng <b>87 MB</b> nên tải hơi lâu, cứ để yên cho nó chạy xong.</p>
+  </section>
+
+  <!-- 2 -->
+  <section class="g-step" id="b2">
+    <h2><span class="g-num">2</span> Mở app lần đầu</h2>
+
+    <div class="g-sub">
+      <h3>2.1. Bỏ khoá file</h3>
+      <p>File tải từ mạng về hay bị Windows đánh dấu “không tin cậy”. Bỏ dấu này trước cho đỡ vướng:</p>
+      <ol>
+        <li><b>Chuột phải</b> vào file vừa tải → chọn <b>Properties</b></li>
+        <li>Nhìn xuống <b>cuối cùng</b> của thẻ <i>General</i>, nếu thấy ô <b>Unblock</b> thì <b>tích vào</b></li>
+        <li>Bấm <b>OK</b></li>
+      </ol>
+      <p class="g-note">Không thấy ô <i>Unblock</i> cũng bình thường — bỏ qua, đi tiếp.</p>
+    </div>
+
+    <div class="g-sub">
+      <h3>2.2. Vượt màn hình xanh SmartScreen</h3>
+      <p>Nháy đúp vào file. Vì file <b>chưa mua chữ ký số</b> (khoảng vài trăm đô một năm) nên Windows sẽ chặn bằng một màn hình xanh:</p>
+
+      <div class="g-mock" role="img" aria-label="Minh hoạ màn hình cảnh báo SmartScreen của Windows">
+        <div class="g-mock-tag">Minh hoạ — không phải ảnh chụp</div>
+        <div class="g-mock-card">
+          <b>Windows protected your PC</b>
+          <p>Microsoft Defender SmartScreen prevented an unrecognized app from starting. Running this app might put your PC at risk.</p>
+          <span class="g-mock-link">More info</span>
+          <div class="g-mock-btns"><span class="g-mock-btn">Don't run</span></div>
+        </div>
+        <div class="g-mock-steps">
+          <div><b>1</b> Bấm dòng chữ nhỏ <b>More info</b> — nó nằm khuất, rất dễ bỏ sót</div>
+          <div><b>2</b> Nút <b>Run anyway</b> hiện ra → bấm vào</div>
+        </div>
+      </div>
+
+      <p class="g-ok">✓ Chỉ bị hỏi <b>đúng lần đầu</b>. Từ lần sau nháy đúp là chạy thẳng.</p>
+      <p>Lần đầu chờ khoảng <b>5–10 giây</b> để app tự giải nén. Cửa sổ sẽ hiện ra ở <b>góc trên bên phải</b> màn hình.</p>
+    </div>
+  </section>
+
+  <!-- 3 -->
+  <section class="g-step" id="b3">
+    <h2><span class="g-num">3</span> Nhập danh sách code</h2>
+    <p>Quay lại <a href="./">trang code</a>, bấm <b>⚡ Tạo overlay</b> → <b>Toàn bộ code còn hạn</b>, rồi copy các code sang app. Hoặc dán danh sách của riêng bạn.</p>
+    <figure>
+      <img src="img/hd-1-nhap.png" alt="Màn hình nhập của app với chú thích các bước" loading="lazy" />
+    </figure>
+    <div class="g-box">
+      <b>Nhớ tích ô “Chỉ tách theo dòng”</b>
+      <p>Không tích thì app cắt theo <b>dấu cách</b>, code nào có khoảng trắng sẽ bị vỡ làm đôi. Tích vào là mỗi dòng bạn xuống hàng thành đúng một code.</p>
+    </div>
+  </section>
+
+  <!-- 4 -->
+  <section class="g-step" id="b4">
+    <h2><span class="g-num">4</span> Copy từng dòng</h2>
+    <p>Bấm <b>RUN</b>, danh sách hiện ra và được đánh số. Đây là màn hình bạn sẽ nhìn suốt lúc nhập code.</p>
+    <figure>
+      <img src="img/hd-2-danhsach.png" alt="Danh sách code trong app, dòng đã copy mờ đi, dòng kế tiếp viền xanh" loading="lazy" />
+    </figure>
+    <p>Cách làm thực tế: bấm <b>Copy</b> → sang cửa sổ game → dán bằng <b>Ctrl + V</b> → quay lại bấm Copy dòng tiếp theo. App tự làm mờ dòng vừa xong và sáng dòng kế tiếp nên <b>không bao giờ bị lạc chỗ</b>.</p>
+    <p>Copy hết thì hiện khung xanh <b>DONE ✓</b>.</p>
+  </section>
+
+  <!-- 5 -->
+  <section class="g-step" id="b5">
+    <h2><span class="g-num">5</span> Xuyên chuột — khi overlay che mất game</h2>
+    <p>Overlay nổi đè lên game, nên mỗi lần bạn nhấp vào vùng của nó thì game <b>không nhận được</b> cú nhấp đó. Bật xuyên chuột là xong.</p>
+    <figure>
+      <img src="img/hd-3-xuyenchuot.png" alt="App ở chế độ xuyên chuột với viền cam" loading="lazy" />
+    </figure>
+    <div class="g-box warn">
+      <b>Đang bật thì không bấm được nút nào trong app nữa</b>
+      <p>Kể cả nút tắt. Phải dùng phím tắt — mặc định:</p>
+      <table class="g-tbl">
+        <tr><td><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Space</kbd></td><td>Bật / tắt xuyên chuột</td></tr>
+        <tr><td><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>C</kbd></td><td>Copy dòng kế tiếp, chạy cả khi đang trong game</td></tr>
+      </table>
+    </div>
+  </section>
+
+  <!-- 6 -->
+  <section class="g-step" id="b6">
+    <h2><span class="g-num">6</span> Đổi phím tắt cho dễ bấm</h2>
+    <p>Thấy tổ hợp ba nút khó bấm, hoặc game của bạn đã dùng sẵn tổ hợp đó? Bấm nút <b>⚙️</b> trên thanh tiêu đề.</p>
+    <figure>
+      <img src="img/hd-4-caidat.png" alt="Bảng cài đặt nâng cao với phần ngôn ngữ và phím tắt" loading="lazy" />
+    </figure>
+    <p><b>Cách gán:</b> bấm vào ô phím → ô nhấp nháy và hiện <i>Gõ phím...</i> → <b>gõ tổ hợp bạn muốn</b>. Nhận <kbd>Ctrl</kbd>+<kbd>F</kbd>, <kbd>F8</kbd>, phím mũi tên, phím numpad, hoặc chỉ một phím <kbd>;</kbd>. Bấm <kbd>Esc</kbd> để huỷ.</p>
+    <div class="g-box warn">
+      <b>Cẩn thận với phím đơn</b>
+      <p>Gán một phím đơn như <kbd>;</kbd> thì app giữ phím đó trên <b>toàn máy</b>. Lúc app đang chạy, bạn gõ <kbd>;</kbd> ở Word hay trình duyệt cũng sẽ không ra ký tự. Rất tiện khi chơi game, nhưng nhớ tắt app khi cần gõ văn bản.</p>
+    </div>
+    <p class="g-note">Nếu tổ hợp đang bị app khác giữ, app báo đỏ và <b>tự quay về phím cũ</b> — bạn không bị mất phím tắt.</p>
+  </section>
+
+  <!-- 7 -->
+  <section class="g-step" id="b7">
+    <h2><span class="g-num">7</span> Macro — để app tự nhập hộ</h2>
+    <p>Thay vì tự bấm từng code, bạn dạy app làm <b>một lượt</b> rồi nó tự lặp lại cho cả danh sách. Bấm nút <b>🎬</b>.</p>
+    <figure>
+      <img src="img/hd-5-macro.png" alt="Bảng macro với danh sách các bước đã ghi" loading="lazy" />
+    </figure>
+
+    <h3>Làm theo thứ tự này</h3>
+    <ol class="g-ol">
+      <li>Nhập code và bấm <b>RUN</b> trước, để có danh sách chờ.</li>
+      <li>Bấm <b>🎬</b> → <b>⏺ Ghi thao tác</b>. Nút chuyển sang màu đỏ.</li>
+      <li>Sang cửa sổ game, làm <b>đúng một lượt</b>: nhấp vào ô nhập code → <kbd>Ctrl</kbd>+<kbd>V</kbd> → nhấp nút xác nhận.</li>
+      <li>Quay lại bấm <b>⏹ Dừng ghi</b>.</li>
+      <li>Bấm <b>▶ Chạy N vòng</b>. App đếm ngược <b>3 giây</b> — tranh thủ chuyển sang cửa sổ game.</li>
+    </ol>
+
+    <div class="g-box">
+      <b>Bước “Lấy code kế tiếp” là quan trọng nhất</b>
+      <p>Đây là bước khiến mỗi vòng dán một code <b>khác nhau</b>. Khi bạn bấm <kbd>Ctrl</kbd>+<kbd>V</kbd> lúc ghi, app <b>tự chèn</b> bước này ngay trước đó.</p>
+      <p>Nếu không thấy nó trong danh sách (ví dụ bạn dán bằng chuột phải → Paste), cứ bấm nút <b>+ Dán code (2 bước)</b> rồi dùng <b>↑ ↓</b> kéo vào đúng chỗ.</p>
+    </div>
+
+    <p>🛑 <b>Dừng gấp:</b> bấm <kbd>Esc</kbd>. Phím này chỉ có tác dụng lúc macro đang chạy nên không chiếm phím Esc của bạn lúc bình thường.</p>
+
+    <div class="g-box danger">
+      <b>Ba điều phải biết trước khi dùng macro</b>
+      <p><b>1. Không phải game nào cũng ăn.</b> Nhiều game đọc chuột/phím theo kiểu RawInput hoặc DirectInput nên <b>bỏ qua hoàn toàn</b> thao tác giả lập, và các hệ anti-cheat có thể chặn hoặc đánh dấu. <b>Hãy thử 2–3 dòng trước khi chạy cả trăm dòng.</b></p>
+      <p><b>2. Toạ độ ghi theo pixel màn hình.</b> Đổi độ phân giải, đổi cửa sổ/fullscreen, hay di chuyển cửa sổ game thì phải ghi lại macro.</p>
+      <p><b>3. Antivirus dễ báo nhầm.</b> App phải móc hook bàn phím toàn cục để ghi thao tác, nên Defender hoặc Avast có thể cảnh báo mạnh hơn bình thường.</p>
+    </div>
+  </section>
+
+  <!-- 8 -->
+  <section class="g-step" id="b8">
+    <h2><span class="g-num">8</span> Gặp lỗi thì làm gì</h2>
+    <table class="g-tbl wide">
+      <thead><tr><th>Hiện tượng</th><th>Cách xử lý</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>Nháy đúp mà không thấy gì</td>
+          <td>Mở Task Manager (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Esc</kbd>), tìm tiến trình <i>Overlay Copy</i>. Nếu có mà không thấy cửa sổ thì nó đang nằm ngoài vùng nhìn thấy do vừa đổi độ phân giải — kết thúc tiến trình rồi mở lại.</td>
+        </tr>
+        <tr>
+          <td>Báo <i>“This app can't run on your PC”</i></td>
+          <td>Máy đang chạy Windows 32-bit hoặc chip ARM. Bản này chỉ chạy trên <b>x64</b>.</td>
+        </tr>
+        <tr>
+          <td>Lỡ bật xuyên chuột mà không tắt được</td>
+          <td>Bấm <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Space</kbd>. Vẫn không được thì mở Task Manager kết thúc tiến trình rồi mở lại.</td>
+        </tr>
+        <tr>
+          <td>Bấm phím tắt mà không copy</td>
+          <td>Kiểm tra app còn chạy không, và đã bấm <b>RUN</b> chưa. Vẫn không ăn thì tổ hợp đã bị app khác chiếm — vào <b>⚙️</b> đổi sang tổ hợp khác.</td>
+        </tr>
+        <tr>
+          <td>Macro chạy nhưng game không nhận</td>
+          <td>Game của bạn thuộc loại bỏ qua thao tác giả lập. Không có cách khắc phục từ phía app — quay về dùng phím tắt copy rồi tự dán.</td>
+        </tr>
+        <tr>
+          <td>Nút <b>▶ Chạy</b> bị mờ, ghi <i>0 vòng</i></td>
+          <td>Chưa có dòng nào trong hàng chờ. Đóng bảng macro, dán code vào ô nhập rồi bấm <b>RUN</b>, sau đó quay lại.</td>
+        </tr>
+        <tr>
+          <td>Antivirus xoá mất file</td>
+          <td>Thêm file vào danh sách loại trừ: Windows Security → <i>Virus &amp; threat protection</i> → <i>Manage settings</i> → <i>Exclusions</i> → <i>Add an exclusion</i> → <i>File</i>.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="g-end">
+    <p>Vẫn vướng chỗ nào? Mở issue ở <a href="https://github.com/huytran19/overlay-copy/issues" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>
+    <a class="cta" href="./">← Về trang danh sách code</a>
+  </section>
+
+</main>
+
+<footer class="foot wrap">
+  <p>Code do cộng đồng tổng hợp, có thể hết hạn bất cứ lúc nào. Nguồn gốc:
+    <a href="https://codes.yar.gg/" target="_blank" rel="noopener noreferrer">codes.yar.gg</a>.</p>
+</footer>
+
+</body>
+</html>
