@@ -367,10 +367,10 @@ $('k-undo').textContent = IS_MAC ? '\u2318Z' : 'Ctrl+Z';
 /* ---------- Duong dan tai app ---------- */
 
 const REPO = 'https://github.com/huytran19/overlay-copy';
-const REL = `${REPO}/releases/latest`;
+const REL = `${REPO}/releases/latest/download`;
 
-$('dl-portable').href = REL;
-$('dl-setup').href = REL;
+$('dl-portable').href = `${REL}/OverlayCopy-portable-1.0.0.exe`;
+$('dl-setup').href = `${REL}/OverlayCopy-setup-1.0.0.exe`;
 $('dl-repo').href = REPO;
 
 /* ---------- Khoi dong ---------- */
