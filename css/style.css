@@ -678,3 +678,7 @@ kbd {
 .top-link { color: var(--fg-dim); text-decoration: none; font-size: 13px; }
 .top-link:hover { color: var(--accent); }
 @media (max-width: 600px) { .top-right .stat.dim { display: none; } }
+
+/* Thuoc tinh width/height tren the <img> da tu tinh ty le, chi can nen toi
+   de khung khong nhap nhay trong luc anh dang tai */
+.g-step figure img { background: #12141a; }
