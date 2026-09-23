@@ -6,6 +6,7 @@ và tự lưu tiến trình.
 👉 **https://huytran19.github.io/wwm-codes/**
 
 📖 **Hướng dẫn dùng app:** https://huytran19.github.io/wwm-codes/huong-dan.html
+🎬 **Video 1 phút:** https://huytran19.github.io/wwm-codes/huong-dan.html#video
 
 ## Có gì
 
@@ -30,6 +31,7 @@ index.html          Bố cục trang + overlay + các hộp thoại
 huong-dan.html      Hướng dẫn từng bước cho người không rành máy tính
 css/style.css       Giao diện
 img/                Ảnh chụp app đã chú thích mũi tên + chữ
+video/              Video hướng dẫn quay từ app thật, có phụ đề
 js/codes-data.js    Danh sách code (bản chụp)
 js/app.js           Logic danh sách, overlay, lưu tiến trình
 ```

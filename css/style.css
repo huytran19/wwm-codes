@@ -682,3 +682,33 @@ kbd {
 /* Thuoc tinh width/height tren the <img> da tu tinh ty le, chi can nen toi
    de khung khong nhap nhay trong luc anh dang tai */
 .g-step figure img { background: #12141a; }
+
+/* ---------- Video huong dan ---------- */
+
+.g-video {
+  margin: 8px 0 6px;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: linear-gradient(180deg, var(--bg-soft), var(--bg));
+  text-align: center;
+  scroll-margin-top: 70px;
+}
+.g-video h2 { font-size: 19px; font-weight: 700; letter-spacing: -0.2px; }
+.g-video-sub { margin-top: 7px; font-size: 13.5px; color: var(--fg-dim); }
+.g-video video {
+  display: block;
+  width: 100%;
+  max-width: 340px;
+  height: auto;
+  margin: 18px auto 0;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #0b0d12;
+}
+.g-video .g-note { margin-top: 14px; }
+
+@media (max-width: 600px) {
+  .g-video { padding: 16px 12px; }
+  .g-video video { max-width: 100%; }
+}
