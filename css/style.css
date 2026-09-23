@@ -712,3 +712,36 @@ kbd {
   .g-video { padding: 16px 12px; }
   .g-video video { max-width: 100%; }
 }
+
+/* Nut tai o thanh tren cung - khoi phai cuon het danh sach code */
+.top-dl {
+  padding: 5px 11px;
+  border: 1px solid var(--accent);
+  border-radius: 7px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 12.5px;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.top-dl:hover { background: var(--accent); color: #fff; }
+
+/* Khoi tai nam gon hon khi o dau trang, de danh cho ngay danh sach code */
+.dl { margin-top: 10px; margin-bottom: 10px; scroll-margin-top: 66px; }
+
+@media (max-width: 600px) {
+  .top-right .stat { display: none; }
+  .top-link { display: none; }
+}
+
+/* Tren dien thoai, khoi tai da nam dau trang nen bo 3 the tinh nang cho gon,
+   nguoi dung toi day de lay code truoc da. Chi tiet van con o trang huong dan. */
+@media (max-width: 600px) {
+  .dl-grid { display: none; }
+  .dl { padding: 18px 14px; }
+  .dl h2 { font-size: 17px; }
+  .dl-lead { font-size: 13.5px; }
+  .dl-note { font-size: 12px; }
+  .dl-btns { gap: 8px; }
+}

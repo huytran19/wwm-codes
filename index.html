@@ -19,6 +19,7 @@
       <span class="stat"><b id="stat-left">0</b> còn lại</span>
       <span class="stat dim"><b id="stat-used">0</b> đã dùng</span>
       <a href="huong-dan.html" class="top-link">Hướng dẫn</a>
+      <a href="#download" class="top-dl">⬇ Tải app</a>
     </div>
   </div>
 </header>
@@ -34,19 +35,6 @@
       · cập nhật <b id="updated">—</b>
     </p>
   </section>
-
-  <section class="toolbar">
-    <input id="search" type="search" placeholder="Tìm code..." autocomplete="off" />
-    <div class="tabs" id="tabs">
-      <button class="tab on" data-f="all">Tất cả</button>
-      <button class="tab" data-f="unused">Chưa dùng</button>
-      <button class="tab" data-f="used">Đã dùng</button>
-    </div>
-    <button id="btn-reset" class="ghost">⟳ Xoá tiến trình</button>
-  </section>
-
-  <section id="list" class="list"></section>
-  <p id="empty" class="empty hidden">Không có code nào khớp.</p>
 
   <section class="dl" id="download">
     <h2>Muốn tự động nhập luôn? Tải app overlay</h2>
@@ -81,8 +69,23 @@
       Windows 10/11 64-bit · Bản Portable chạy thẳng, không cần cài.
       Lần đầu Windows hiện màn hình xanh SmartScreen thì bấm <b>More info</b> → <b>Run anyway</b>.
       Mã nguồn ở <a id="dl-repo" href="#" target="_blank" rel="noopener noreferrer">GitHub</a>.
+      <a href="huong-dan.html">Xem app làm được gì →</a>
     </p>
   </section>
+
+  <section class="toolbar">
+    <input id="search" type="search" placeholder="Tìm code..." autocomplete="off" />
+    <div class="tabs" id="tabs">
+      <button class="tab on" data-f="all">Tất cả</button>
+      <button class="tab" data-f="unused">Chưa dùng</button>
+      <button class="tab" data-f="used">Đã dùng</button>
+    </div>
+    <button id="btn-reset" class="ghost">⟳ Xoá tiến trình</button>
+  </section>
+
+  <section id="list" class="list"></section>
+  <p id="empty" class="empty hidden">Không có code nào khớp.</p>
+
 
 </main>
 
