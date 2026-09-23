@@ -369,8 +369,9 @@ $('k-undo').textContent = IS_MAC ? '\u2318Z' : 'Ctrl+Z';
 const REPO = 'https://github.com/huytran19/overlay-copy';
 const REL = `${REPO}/releases/latest/download`;
 
-$('dl-portable').href = `${REL}/OverlayCopy-portable-1.0.0.exe`;
-$('dl-setup').href = `${REL}/OverlayCopy-setup-1.0.0.exe`;
+// ten file khong co so phien ban -> link nay dung cho moi ban phat hanh sau nay
+$('dl-portable').href = `${REL}/OverlayCopy-portable.exe`;
+$('dl-setup').href = `${REL}/OverlayCopy-setup.exe`;
 $('dl-repo').href = REPO;
 
 /* ---------- Khoi dong ---------- */
