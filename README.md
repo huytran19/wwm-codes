@@ -38,16 +38,16 @@ js/app.js           Logic danh sách, overlay, lưu tiến trình
 
 ## Cập nhật danh sách code
 
-Code nằm trong `js/codes-data.js`. Nguồn gốc là danh sách cộng đồng ở
-[codes.yar.gg](https://codes.yar.gg/) — trang đó dựng bằng JS nên muốn lấy mới thì mở trang,
-chạy đoạn này trong Console rồi dán kết quả vào `js/codes-data.js`:
+Code nằm trong `js/codes-data.js`, lấy từ API của danh sách cộng đồng
+[codes.yar.gg](https://codes.yar.gg/) (`/api/codes`):
 
-```js
-[...document.querySelectorAll('article[data-code]')].map(a => ({
-  code: a.dataset.code,
-  date: a.querySelector('.code-date')?.textContent.trim() || ''
-}))
 ```
+node scripts/update-codes.js          # chỉ cập nhật file
+node scripts/update-codes.js --push   # cập nhật + commit + push nếu có thay đổi
+```
+
+Trên máy chủ repo có launchd `com.huytran.wwm-codes.update` chạy lệnh `--push` lúc 12:00 mỗi ngày
+(log ở `logs/update.log`).
 
 ## Ghi chú
 
